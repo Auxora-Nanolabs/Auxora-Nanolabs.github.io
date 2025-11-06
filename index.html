@@ -7,8 +7,19 @@
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
             background-color: #c8decc;
             color: #222;  
+        }
+        main {
+            flex: 1;
+        }
+        section {
+            max-width: 1100 px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
         nav {
             display: flex;
@@ -155,50 +166,51 @@
             <a href="team.html">Team</a>
         </div>
     </nav>
-
-    <header>
-        <h1>Auxora Nanolabs</h1>
-        <p>Auxora Nanolabs is a modular microgravity simulator designed to study plant growth in space-like conditions. It replicates environmental factors such as light, airflow, and hydration control to help researchers understand how plants adapt and thrive beyond Earth.</p>
-        <a href="#Download" class="btn">Download Software</a>
-    </header>
-    <section id="about">
-        <h2>What is Auxora Nanolabs about?</h2>
-        <div class="content-section">
-            <img src="mission_patch.png" alt="Auxora NanoLab prototype">
-            <div class="text">
-                <p>Auxora Nanolabs replicates plant growth experiments under simulated microgravity using an advanced control and sensing system. Through our custom software, users can monitor and adjust environmental variables — like LED light intensity, water delivery, and airflow direction — in real time.
-The system integrates a time-lapse camera and environmental sensors to collect continuous data, allowing researchers to analyze plant responses and optimize growth conditions for space missions. The Universal Nanolab will enable hands-on learning
-in classrooms of all grades throughout the nation due
-to its off-the-shelf design and seamless integration
-with the Nanolab application.</p>
-            <a href="about.html" class="btn">Learn More</a>
+    <main>
+        <header>
+            <h1>Auxora Nanolabs</h1>
+            <p>Auxora Nanolabs is a modular microgravity simulator designed to study plant growth in space-like conditions. It replicates environmental factors such as light, airflow, and hydration control to help researchers understand how plants adapt and thrive beyond Earth.</p>
+            <a href="#Download" class="btn">Download Software</a>
+        </header>
+        <section id="about">
+            <h2>What is Auxora Nanolabs about?</h2>
+            <div class="content-section">
+                <img src="mission_patch.png" alt="Auxora NanoLab prototype">
+                <div class="text">
+                    <p>Auxora Nanolabs replicates plant growth experiments under simulated microgravity using an advanced control and sensing system. Through our custom software, users can monitor and adjust environmental variables — like LED light intensity, water delivery, and airflow direction — in real time.
+    The system integrates a time-lapse camera and environmental sensors to collect continuous data, allowing researchers to analyze plant responses and optimize growth conditions for space missions. The Universal Nanolab will enable hands-on learning
+    in classrooms of all grades throughout the nation due
+    to its off-the-shelf design and seamless integration
+    with the Nanolab application.</p>
+                <a href="about.html" class="btn">Learn More</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="features">
-        <h2>Key Features</h2>
-        <div class="content-section reverse">
-            <img src="demo_img.png" alt="NanoLab internal design">
-            <div class="text">
-                <ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
-                    <li><b>Modular Design:</b> Three interchangeable modules — Control, Experiment, and Sensor — allow for a variety of experimental setups.</li>
-                    <li><b>Smart Integration:</b> Pin header buses automatically recognize connected modules and adjust system parameters accordingly.</li>
-                    <li><b>Automated Controls:</b> Peristaltic pump feeds water precisely, while a continuous servo motor rotates to vary wind direction and strengthen roots.</li>
-                    <li><b>Environmental Simulation:</b> PC fan mount in the Sensor Module replicates atmospheric wind; LED array provides adjustable light spectrums.</li>
-                    <li><b>Data Logging Software:</b> Monitor and record plant growth metrics directly from your computer.</li>
-                    <li><b>Aerospace-Grade Build:</b> Constructed with durable PEI 9085 for use in extreme environments.</li>
-                    <li><b>Advanced Electronics:</b> Powered by an ESP-32 microcontroller with integrated VOC detection, camera feed, and automated control routines.</li>
+        </section>
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="content-section reverse">
+                <img src="demo_img.png" alt="NanoLab internal design">
+                <div class="text">
+                    <ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
+                        <li><b>Modular Design:</b> Three interchangeable modules — Control, Experiment, and Sensor — allow for a variety of experimental setups.</li>
+                        <li><b>Smart Integration:</b> Pin header buses automatically recognize connected modules and adjust system parameters accordingly.</li>
+                        <li><b>Automated Controls:</b> Peristaltic pump feeds water precisely, while a continuous servo motor rotates to vary wind direction and strengthen roots.</li>
+                        <li><b>Environmental Simulation:</b> PC fan mount in the Sensor Module replicates atmospheric wind; LED array provides adjustable light spectrums.</li>
+                        <li><b>Data Logging Software:</b> Monitor and record plant growth metrics directly from your computer.</li>
+                        <li><b>Aerospace-Grade Build:</b> Constructed with durable PEI 9085 for use in extreme environments.</li>
+                        <li><b>Advanced Electronics:</b> Powered by an ESP-32 microcontroller with integrated VOC detection, camera feed, and automated control routines.</li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="cta">
-        <h2>Get started with Auxora Nanolabs</h2>
-        <p>Download our software and follow the assembly manual to build your own NanoLab system.</p>
-        <a id="download" href="download_options.html" class="btn">Download Software</a>
-        <a href="manual.html" class="btn">View Assembly Manual</a>
-    </section>
+        </section>
+        <section id="cta">
+            <h2>Get started with Auxora Nanolabs</h2>
+            <p>Download our software and follow the assembly manual to build your own NanoLab system.</p>
+            <a id="download" href="download_options.html" class="btn">Download Software</a>
+            <a href="manual.html" class="btn">View Assembly Manual</a>
+        </section>
+    </main>
     <footer>
         <p>2025 Auxora Nanolabs | NASA HUNCH | <a href="mailto:placeholder@email.com" style="color:#00c2a8;">Contact Us</a></p>
     </footer>
