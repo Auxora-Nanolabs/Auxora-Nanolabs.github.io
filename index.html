@@ -10,6 +10,47 @@
             background-color: #c8decc;
             color: #222;  
         }
+        nav {
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            background: #ffffffcc;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 10px 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        nav img {
+            height: 45 px;
+        }
+        .logo-area span {
+            font-weight: 600;
+            font-size: 1.2em;
+            color: #0077ff;
+        }
+        nav .nav-links {
+            display: flex;
+            align-items: right;
+            gap: 35 px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #394b60;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #00c2a8;
+        }
         header {
             background: linear-gradient(120deg, #cbf9c7, #00c2a8);
             color: rgb(255, 255, 255);
@@ -49,7 +90,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 25px;
-            margin-top: 40px;
+            margin-top: 70px;
         }
         footer {
             background: #000000;
@@ -62,10 +103,23 @@
             text-align: left;
         }
 
-        
     </style>
 </head>
 <body>
+    <nav>
+        <div class="logo area">
+            <a href="index.html"><img src="images/mission_patch.png" alt="NanoLab Logo"></a>
+        </div>
+        <div class=".nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="download_options.html">Download</a>
+            <a href="manual.html">Manual</a>
+            <a href="team.html">Team</a>
+
+        </div>
+    </nav>
+
     <header>
         <h1>Auxora Nanolabs</h1>
         <p>Placeholder description</p>
