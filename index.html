@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxora Nanolabs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
@@ -77,12 +80,47 @@
     <footer>
         <p>2025 Auxora Nanolabs | NASA HUNCH | <a href="mailto:placeholder@email.com" style="color:#00c2a8;">Contact Us</a></p>
     </footer>
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+  if (!menuToggle || !navLinks) {
+    console.warn('Nav toggle or nav-links not found. Check IDs.');
+    return;
+  }
+
+  // Toggle function
+  function toggleMenu() {
+    const isActive = navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+  }
+
+  // Click / touch support
+  menuToggle.addEventListener('click', toggleMenu);
+  menuToggle.addEventListener('touchend', function(e) {
+    e.preventDefault(); // prevent double events on some devices
+    toggleMenu();
+  });
+
+  // Close menu when clicking a link (mobile UX)
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Optional: close if user taps outside the nav on mobile
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768 && navLinks.classList.contains('active')) {
+      const insideNav = e.target.closest('.nav-container');
+      if (!insideNav) {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+});
+</script>
 </body>
