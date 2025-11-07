@@ -40,6 +40,15 @@
             height: auto;
             margin-left: 40px;
         }
+        .image-text {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .image-text.reverse {
+            flex-direction: row-reverse;
+        }
         nav img {
             height: 50px;
         }
@@ -151,8 +160,54 @@
             margin-bottom: 20px; 
             }
 
+/*----------MOBILE LAYOUT---------*/
+            @media (max-width: 768px) {
+                nav {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px;
+                }
+                .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    margin-top: 10px;
+                }
+                .nav-links a {
+                    display: block;
+                    padding: 8px 12px;
+                }
+                h1, h2 {
+                    text-align: center;
+                    font-size: 1.6em;
+                }
+                button, .btn {
+                    font-size: 1em;
+                    padding: 10px 20px;
+                }
+                section {
+                    padding: 20px, 10px;
+                    text-align: center;
+                }
+                .image-text {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .image-text img {
+                    width: 80%;
+                    max-width: 300px;
+                    margin-bottom: 20px;
+                }
+                footer {
+                    font-size: 0.9em;
+                    padding: 10px 0;
+                }
+            }
+
     </style>
 </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <nav>
         <div class=".logo-area">
@@ -175,6 +230,7 @@
         <section id="about">
             <h2>What is Auxora Nanolabs about?</h2>
             <div class="content-section">
+            <section class="image-text">
                 <img src="mission_patch.png" alt="Auxora NanoLab prototype">
                 <div class="text">
                     <p>Auxora Nanolabs replicates plant growth experiments under simulated microgravity using an advanced control and sensing system. Through our custom software, users can monitor and adjust environmental variables — like LED light intensity, water delivery, and airflow direction — in real time.
@@ -184,10 +240,12 @@
     with the Nanolab application.</p>
                 <a href="about.html" class="btn">Learn More</a>
                 </div>
+            </section>    
             </div>
         </section>
         <section id="features">
             <h2>Key Features</h2>
+            <section class="image-text">
             <div class="content-section reverse">
                 <img src="demo_img.png" alt="NanoLab internal design">
                 <div class="text">
@@ -199,10 +257,10 @@
                         <li><b>Data Logging Software:</b> Monitor and record plant growth metrics directly from your computer.</li>
                         <li><b>Aerospace-Grade Build:</b> Constructed with durable PEI 9085 for use in extreme environments.</li>
                         <li><b>Advanced Electronics:</b> Powered by an ESP-32 microcontroller with integrated VOC detection, camera feed, and automated control routines.</li>
-
                     </ul>
                 </div>
             </div>
+            </section>
         </section>
         <section id="cta">
             <h2>Get started with Auxora Nanolabs</h2>
