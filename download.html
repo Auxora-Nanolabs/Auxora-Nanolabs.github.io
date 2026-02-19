@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Auxora Nanolabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="mission_patch.png" alt="Auxora Nanolabs Logo">
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">
+      ☰
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="download.html">Download</a>
+      <a href="https://docs.google.com/document/d/1YwnuYyEiSdV2CAJE74MJn1v8EBoIiKXrndOQJxHSAkE/edit?usp=sharing">Manual</a>
+    </div>
+  </div>
+</nav>
+
+    <main>
+        <header>
+            <h1>Download Software</h1>
+            <p>Get started with Auxora Nanolabs by downloading our control software and following our step-by-step installation guide.</p>
+        </header>
+
+        <section id="system-requirements">
+            <h2>System Requirements</h2>
+            <div class="content-section">
+                <div class="text">
+                    <p>Before installation, ensure you have:</p>
+                    <ul>
+                        <li><strong>Operating System:</strong> Windows 10 or later, macOS, or Linux</li>
+                        <li><strong>Python:</strong> Version 3.10 or later installed</li>
+                        <li><strong>Internet Access:</strong> Required for downloading dependencies</li>
+                        <li><strong>USB Port:</strong> If connecting to hardware</li>
+                    </ul>
+                    
+                    <h3>Check Your Python Version</h3>
+                    <p>Open Command Prompt (Windows) or Terminal (macOS/Linux) and type:</p>
+                    <div class="code-block">
+                        <code>python --version</code>
+                    </div>
+                    
+                    <p>If Python is not installed, download it from:</p>
+                    <div class="code-block">
+                        <code>https://www.python.org/downloads/</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download-software">
+            <h2>Downloading the Software from GitHub</h2>
+            <div class="content-section">
+                <div class="text">
+                    <h3>If Git is installed:</h3>
+                    <ol>
+                        <li>Open Command Prompt or Terminal</li>
+                        <li>Navigate to the folder where you want the project saved:</li>
+                        <div class="code-block">
+                            <code>cd Desktop</code>
+                        </div>
+                        <li>Run the following command:</li>
+                        <div class="code-block">
+                            <code>git clone https://github.com/Blingblingboy16/NEWGUI.git</code>
+                        </div>
+                        <li>Press Enter. The project folder will download automatically.</li>
+                    </ol>
+
+                    <h3>If Git is not installed:</h3>
+                    <p>Download Git from:</p>
+                    <div class="code-block">
+                        <code>https://git-scm.com/</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="install-dependencies">
+            <h2>Installing Required Python Libraries</h2>
+            <div class="content-section">
+                <div class="text">
+                    <p>After downloading the project, before running the software, create and activate a virtual environment.</p>
+                    
+                    <h3>Step 1: Navigate to the Project Folder</h3>
+                    <p>Open Command Prompt (Windows) or Terminal (macOS/Linux) and navigate to the project directory:</p>
+                    <div class="code-block">
+                        <code>cd auxora-nanolabs</code>
+                    </div>
+
+                    <h3>Step 2: Create a Virtual Environment</h3>
+                    <p>Run the following command:</p>
+                    <div class="code-block">
+                        <code>python -m venv venv</code>
+                    </div>
+                    <p>This will create a virtual environment folder named venv inside the project directory.</p>
+
+                    <h3>Step 3: Activate the Virtual Environment</h3>
+                    <p><strong>On Windows:</strong></p>
+                    <div class="code-block">
+                        <code>venv\Scripts\activate</code>
+                    </div>
+                    
+                    <p><strong>On macOS/Linux:</strong></p>
+                    <div class="code-block">
+                        <code>source venv/bin/activate</code>
+                    </div>
+                    
+                    <p>Once activated, your terminal prompt will show (venv) at the beginning of the line. The software is now ready to run within the virtual environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="running-software">
+            <h2>Running the Software</h2>
+            <div class="content-section">
+                <div class="text">
+                    <p>To start the program:</p>
+                    <ol>
+                        <li>Ensure you are inside the project directory</li>
+                        <li>Run:</li>
+                        <div class="code-block">
+                            <code>python new.gui.py</code>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="connecting-hardware">
+            <h2>Connecting to Hardware</h2>
+            <div class="content-section">
+                <div class="text">
+                    <p>Before launching the software:</p>
+                    <ul>
+                        <li>Connect the Auxora Nanolabs hardware via USB</li>
+                        <li>Verify the correct COM port is selected in the software</li>
+                        <li>Ensure drivers are installed (if applicable)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="support">
+            <h2>Need Help?</h2>
+            <div class="content-section">
+                <div class="text">
+                    <p>If you encounter any issues during installation or setup, please:</p>
+                    <ul>
+                        <li>Check our <a href="https://docs.google.com/document/d/1YwnuYyEiSdV2CAJE74MJn1v8EBoIiKXrndOQJxHSAkE/edit?usp=sharing">Assembly Manual</a> for detailed instructions</li>
+                        <li>Contact us at <a href="mailto:auxorananolabs@gmail.com">auxorananolabs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Auxora Nanolabs | NASA HUNCH | <a href="mailto:auxorananolabs@gmail.com" style="color:#00c2a8;">Contact Us</a></p>
+    </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  if (!menuToggle || !navLinks) {
+    console.warn('Nav toggle or nav-links not found. Check IDs.');
+    return;
+  }
+
+  // Toggle function
+  function toggleMenu() {
+    const isActive = navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+  }
+
+  // Click / touch support
+  menuToggle.addEventListener('click', toggleMenu);
+  menuToggle.addEventListener('touchend', function(e) {
+    e.preventDefault(); // prevent double events on some devices
+    toggleMenu();
+  });
+
+  // Close menu when clicking a link (mobile UX)
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Optional: close if user taps outside the nav on mobile
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768 && navLinks.classList.contains('active')) {
+      const insideNav = e.target.closest('.nav-container');
+      if (!insideNav) {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
